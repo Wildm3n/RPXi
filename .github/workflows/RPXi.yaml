@@ -1,0 +1,26 @@
+# meeting_and_contributions.py
+
+# Define the weekly meeting details
+weekly_meeting = {
+    "date": "2024-02-22",  # Replace YYYY-MM-DD with the actual date
+    "time": "19:00",       # Replace HH:MM with the actual time
+}
+
+# Define the team members and their contribution percentages
+team_contributions = {
+    "brigitta.rubin@gmail.com": 45.2,
+    "epowell@ipxco.com": 37.3,
+    "ycnugent@gmail.com": 12.5,
+    "ycnugent@yahoo.com: 5.0,
+}
+
+# Function to display meeting details and contributions
+def display_info():
+    print(f"Weekly Meeting Date: {weekly_meeting['date']} at {weekly_meeting['time']}")
+    print("\nTeam Contributions:")
+    for email, contribution in team_contributions.items():
+        print(f"{email}: {contribution}%")
+
+# Call the function to display the information
+if __name__ == "__main__":
+    display_info()
